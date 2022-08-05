@@ -12,14 +12,14 @@ WELDER enables facility managers and policy makers to model how extreme weather 
 
 The Environmental Systems Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE) is a data repository for Earth and environmental sciences. The following shows a concept for a system for a data package publishing pipeline.
 
-![ess-dive](https://user-images.githubusercontent.com/5075865/182980427-d65e5ac0-cb7a-4ea5-b79b-91ff7088c849.png)
+![ess-dive](https://user-images.githubusercontent.com/5075865/182993874-459f0e5e-d49f-407e-a56f-f616849477fd.png)
 
 
 ### Science Capsule
 
-Science Capsule helps scientists capture and manage next-generation knowledge discovery workflows. This screen shows of concept of a Science Capsule app as a JupyterLab extension. 
+Science Capsule helps scientists capture and manage next-generation knowledge discovery workflows. This screen shows of concept of a Science Capsule app as a JupyterLab extension, integrated with a Jupyter notebook. 
 
-![sciencecapsule](https://user-images.githubusercontent.com/5075865/182981029-5bf1b57c-4e9d-4ba2-9a32-2a8c05cd6ed4.png)
+![sciencecapsule](https://user-images.githubusercontent.com/5075865/182994043-843066fe-99b9-454c-8ccd-195ee9049322.png)
 
 
 ### PARETO
