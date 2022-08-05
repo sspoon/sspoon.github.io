@@ -10,7 +10,7 @@ WELDER enables facility managers and policy makers to model how extreme weather 
 
 ### ESS-DIVE
 
-The Environmental Systems Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE) is a data repository for Earth and environmental sciences. The following shows a concept for a system for a data package publishing pipeline.
+The Environmental Systems Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE) is a data repository for Earth and environmental sciences. The following shows a concept for a data package publishing workflow.
 
 ![ess-dive](https://user-images.githubusercontent.com/5075865/182993874-459f0e5e-d49f-407e-a56f-f616849477fd.png)
 
