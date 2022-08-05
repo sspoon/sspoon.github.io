@@ -1,6 +1,5 @@
-## Hi! I'm Sarah Poon
-
 I'm a UX designer at the Lawrence Berkeley National Lab. Here I'm sharing a small selection of recent projects. All work is supported by the Department of Energy. 
+
 
 ### WELDER
 
@@ -8,17 +7,20 @@ WELDER enables facility managers and policy makers to model how extreme weather 
 
 ![Climate Recon](https://user-images.githubusercontent.com/5075865/182978940-028df596-aec5-48b6-b569-7154dd4c50ae.png)
 
+
 ### ESS-DIVE
 
 The Environmental Systems Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE) is a data repository for Earth and environmental sciences. The following shows a concept for a system for a data package publishing pipeline.
 
 ![ess-dive](https://user-images.githubusercontent.com/5075865/182980427-d65e5ac0-cb7a-4ea5-b79b-91ff7088c849.png)
 
+
 ### Science Capsule
 
 Science Capsule helps scientists capture and manage next-generation knowledge discovery workflows. This screen shows of concept of a Science Capsule app as a JupyterLab extension. 
 
 ![sciencecapsule](https://user-images.githubusercontent.com/5075865/182981029-5bf1b57c-4e9d-4ba2-9a32-2a8c05cd6ed4.png)
+
 
 ### Project Pareto
 
