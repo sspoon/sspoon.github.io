@@ -22,7 +22,7 @@ Science Capsule helps scientists capture and manage next-generation knowledge di
 ![sciencecapsule](https://user-images.githubusercontent.com/5075865/182981029-5bf1b57c-4e9d-4ba2-9a32-2a8c05cd6ed4.png)
 
 
-### Project Pareto
+### PARETO
 
 PARETO enables environmentally sustainable ways to manage, treat and beneficially reuse water produced from oil and gas operations.
 
