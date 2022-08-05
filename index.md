@@ -3,7 +3,7 @@
 
 ### WELDER
 
-WELDER enables facility managers and policy makers to model how extreme weather events might reprioritize the maintenance schedules of facilities and buildings. The following screen below is the "Climate Recon" app which visualizes how extreme weather events are projected to change over time.   
+WELDER enables facility managers and policy makers to model how extreme weather events might reprioritize the maintenance schedules of facilities and buildings. The screen below is the "Climate Recon" app which visualizes how extreme weather events are projected to change over time.   
 
 ![Climate Recon](https://user-images.githubusercontent.com/5075865/182978940-028df596-aec5-48b6-b569-7154dd4c50ae.png)
 
@@ -17,7 +17,7 @@ The Environmental Systems Science Data Infrastructure for a Virtual Ecosystem (E
 
 ### Science Capsule
 
-Science Capsule helps scientists capture and manage next-generation knowledge discovery workflows. This screen shows of concept of a Science Capsule app as a JupyterLab extension, integrated with a Jupyter notebook. 
+Science Capsule helps scientists capture and manage next-generation knowledge discovery workflows. This screen shows a concept of a Science Capsule app as a JupyterLab extension, integrated with a Jupyter notebook. The app captures data generation events from the notebook as well as other workflow processes.
 
 ![sciencecapsule](https://user-images.githubusercontent.com/5075865/182994043-843066fe-99b9-454c-8ccd-195ee9049322.png)
 
