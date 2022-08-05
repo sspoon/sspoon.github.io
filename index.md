@@ -1,4 +1,4 @@
-I'm a UX designer at the Lawrence Berkeley National Lab. Here I'm sharing a small selection of recent projects. All work is supported by the Department of Energy. 
+## Recent Projects
 
 
 ### WELDER
