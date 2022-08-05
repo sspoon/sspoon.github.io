@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+## Hi! I'm Sarah Poon
 
-You can use the [editor on GitHub](https://github.com/sspoon/sspoon.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+I'm a UX designer at the Lawrence Berkeley National Lab. Here I'm sharing a small selection of recent projects. All work is supported by the Department of Energy. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### WELDER
 
-### Markdown
+WELDER enables facility managers and policy makers to model how extreme weather events might reprioritize the maintenance schedules of facilities and buildings. The following screen below is the "Climate Recon" page which visualizes how extreme weather events are projected to change over time.   
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![Climate Recon](https://user-images.githubusercontent.com/5075865/182978940-028df596-aec5-48b6-b569-7154dd4c50ae.png)
 
-```markdown
-Syntax highlighted code block
+### ESS-DIVE
 
-# Header 1
-## Header 2
-### Header 3
+The Environmental Systems Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE) is a data repository for Earth and environmental sciences. The following shows a concept for a system for a data package publishing pipeline.
 
-- Bulleted
-- List
+![ess-dive](https://user-images.githubusercontent.com/5075865/182980427-d65e5ac0-cb7a-4ea5-b79b-91ff7088c849.png)
 
-1. Numbered
-2. List
+### Science Capsule
 
-**Bold** and _Italic_ and `Code` text
+Science Capsule helps scientists capture and manage next-generation knowledge discovery workflows. This screen shows of concept of a Science Capsule app as a JupyterLab extension. 
 
-[Link](url) and ![Image](src)
-```
+![sciencecapsule](https://user-images.githubusercontent.com/5075865/182981029-5bf1b57c-4e9d-4ba2-9a32-2a8c05cd6ed4.png)
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+### Project Pareto
 
-### Jekyll Themes
+PARETO enables environmentally sustainable ways to manage, treat and beneficially reuse water produced from oil and gas operations.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sspoon/sspoon.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+![pareto](https://user-images.githubusercontent.com/5075865/182981241-9ddcb069-0e05-4ae8-812b-c631f6e25b8e.png)
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
