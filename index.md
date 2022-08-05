@@ -3,7 +3,7 @@
 
 ### WELDER
 
-WELDER enables facility managers and policy makers to model how extreme weather events might reprioritize the maintenance schedules of facilities and buildings. The following screen below is the "Climate Recon" page which visualizes how extreme weather events are projected to change over time.   
+WELDER enables facility managers and policy makers to model how extreme weather events might reprioritize the maintenance schedules of facilities and buildings. The following screen below is the "Climate Recon" app which visualizes how extreme weather events are projected to change over time.   
 
 ![Climate Recon](https://user-images.githubusercontent.com/5075865/182978940-028df596-aec5-48b6-b569-7154dd4c50ae.png)
 
