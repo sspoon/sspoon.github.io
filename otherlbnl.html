@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recent Projects | Sarah Poon</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    .font-inter { font-family: 'Inter', sans-serif; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-fuchsia-50 text-gray-900 font-inter">
+
+  <!-- Header -->
+  <header class="bg-fuchsia-100/80 backdrop-blur py-4 border-b border-gray-300 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+      <a href="index.html" class="font-playfair text-2xl md:text-3xl text-gray-900 hover:opacity-90">Sarah Poon</a>
+      <nav class="space-x-6">
+        <a href="projects.html" class="text-gray-700 hover:text-gray-900 hover:underline underline-offset-4">Projects</a>
+        <a href="#contact" class="text-gray-700 hover:text-gray-900 hover:underline underline-offset-4">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page intro -->
+  <main class="max-w-6xl mx-auto px-4 py-12 md:py-16 space-y-10">
+    <section>
+      <h1 class="font-playfair text-3xl md:text-4xl">Selected Applied Science Projects</h1>
+      <p class="mt-3 text-gray-700 max-w-prose">
+        A selection of recent work spanning scientific interfaces, data publishing workflows, and domain research tools.
+      </p>
+    </section>
+
+    <!-- WELDER -->
+    <section class="grid gap-6 md:grid-cols-2 items-start bg-white/70 rounded-2xl border shadow-sm p-6">
+      <div>
+        <h2 class="font-playfair text-2xl">WELDER</h2>
+        <p class="mt-3 text-gray-700">
+          WELDER enables facility managers and policy makers to model how extreme weather events might reprioritize
+          maintenance schedules for facilities and buildings. The “Climate Recon” app visualizes how extreme weather
+          events are projected to change over time.
+        </p>
+      </div>
+      <figure class="rounded-xl overflow-hidden border bg-white">
+        <img
+          src="https://user-images.githubusercontent.com/5075865/182978940-028df596-aec5-48b6-b569-7154dd4c50ae.png"
+          alt="WELDER – Climate Recon visualization showing projected changes in extreme weather over time"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </figure>
+    </section>
+
+    <!-- ESS-DIVE -->
+    <section class="grid gap-6 md:grid-cols-2 items-start bg-white/70 rounded-2xl border shadow-sm p-6">
+      <div>
+        <h2 class="font-playfair text-2xl">ESS-DIVE</h2>
+        <p class="mt-3 text-gray-700">
+          The Environmental Systems Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE) is a repository for
+          Earth and environmental science data. The concept below explores a streamlined data-package publishing workflow.
+        </p>
+      </div>
+      <figure class="rounded-xl overflow-hidden border bg-white">
+        <img
+          src="https://user-images.githubusercontent.com/5075865/182993874-459f0e5e-d49f-407e-a56f-f616849477fd.png"
+          alt="ESS-DIVE concept — data package publishing workflow"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </figure>
+    </section>
+
+    <!-- Science Capsule -->
+    <section class="grid gap-6 md:grid-cols-2 items-start bg-white/70 rounded-2xl border shadow-sm p-6">
+      <div>
+        <h2 class="font-playfair text-2xl">Science Capsule</h2>
+        <p class="mt-3 text-gray-700">
+          Science Capsule helps scientists capture and manage next-generation knowledge discovery workflows.
+          Shown here as a JupyterLab extension integrated with a notebook, the app captures data-generation events
+          alongside other workflow processes.
+        </p>
+      </div>
+      <figure class="rounded-xl overflow-hidden border bg-white">
+        <img
+          src="https://user-images.githubusercontent.com/5075865/182994043-843066fe-99b9-454c-8ccd-195ee9049322.png"
+          alt="Science Capsule concept — JupyterLab extension integrated with a notebook"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </figure>
+    </section>
+
+    <!-- PARETO -->
+    <section class="grid gap-6 md:grid-cols-2 items-start bg-white/70 rounded-2xl border shadow-sm p-6">
+      <div>
+        <h2 class="font-playfair text-2xl">PARETO</h2>
+        <p class="mt-3 text-gray-700">
+          PARETO enables environmentally sustainable ways to manage, treat, and beneficially reuse water produced from
+          oil and gas operations. This concept explores key flows and UI components supporting planning and reuse.
+        </p>
+      </div>
+      <figure class="rounded-xl overflow-hidden border bg-white">
+        <img
+          src="https://user-images.githubusercontent.com/5075865/182981241-9ddcb069-0e05-4ae8-812b-c631f6e25b8e.png"
+          alt="PARETO concept — sustainable produced water management UI"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </figure>
+    </section>
+
+    <!-- Back / Contact -->
+    <section class="flex flex-wrap items-center gap-4">
+      <a href="projects.html" class="text-gray-800 underline underline-offset-4 decoration-fuchsia-400 hover:text-gray-900 hover:decoration-2">
+        ← Back to Projects
+      </a>
+
+    </section>
+  </main>
+
+
+
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

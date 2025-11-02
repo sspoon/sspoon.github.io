@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STRUDEL Design System | Sarah Poon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    .font-inter { font-family: 'Inter', sans-serif; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-fuchsia-50 text-gray-900 font-inter">
+  <!-- Header -->
+  <header class="bg-fuchsia-100/80 backdrop-blur py-4 border-b border-gray-300 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+      <a href="index.html" class="font-playfair text-2xl md:text-3xl text-gray-900 hover:opacity-90">Sarah Poon</a>
+      <nav class="space-x-6">
+        <a href="projects.html" class="text-gray-700 hover:text-gray-900 hover:underline underline-offset-4">Projects</a>
+        <a href="#contact" class="text-gray-700 hover:text-gray-900 hover:underline underline-offset-4">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-16 space-y-12">
+    <section>
+      <h1 class="font-playfair text-3xl md:text-4xl">STRUDEL Design System</h1>
+      <p class="mt-3 text-gray-700 ">
+        A set of high level templates for designing and implementing user interfaces for scientific software. 
+      </p>
+    </section>
+    <!-- Overview -->
+    <section>
+      <h2 class="font-playfair text-xl md:text-2xl mb-3">Background</h2>
+      <p class="text-gray-700 ">
+        The STRUDEL design system emerged from the realization that across different science domains, scientists often want to use UIs to perform similar tasks. For example, many scientific users have a need to search through and filter tabular data, setup and configure computational codes, and monitor real time experimental data. Many of these UIs are developed as bespoke software, but I felt that there was an opportunity to create reusable and customizable templates that could encapsulate these common tasks and serve as starting points for new UI projects. I wrote up my thoughts on a design system for science in a <a target="_blank" href="./assets/designsystemsworkshoppaper.pdf" class="text-gray-800 underline underline-offset-4 hover:text-gray-900 decoration-fuchsia-400 hover:decoration-2">white paper</a> for a <a href="https://web.cvent.com/event/1b7d7c3a-e9b4-409d-ae2b-284779cfe72f/summary" target="_blank" class="text-gray-800 underline underline-offset-4 hover:text-gray-900 decoration-fuchsia-400 hover:decoration-2">DOE workshop</a>, which caught the attention of the Sloan Foundation. Through their <a href="https://sloan.org/grant-detail/g-2022-19360" class="text-gray-800 underline underline-offset-4 hover:text-gray-900 decoration-fuchsia-400 hover:decoration-2" target="_blank">generous grant</a>, the <a href="http://strudel.science" class="text-gray-800 underline underline-offset-4 hover:text-gray-900 decoration-fuchsia-400 hover:decoration-2" target="_blank">STRUDEL project</a> was formed and team assembled.
+      </p>
+    </section>
+
+
+    <section class="grid md:grid-cols-2 gap-8 items-start mt-10">
+      <!-- Text -->
+      <div>
+        <h2 class="font-playfair text-xl md:text-2xl mb-3">Developing the Design System</h2>
+        <p class="text-gray-700">
+          To develop the design system, we first gathered screenshots from several projects across multiple
+          domains from throughout LBNL (focusing on LBNL for scoping purposes). We gathered additional
+          context by interviewing the associated software teams. With these artifacts, we began clustering
+          similar UIs and quickly identified common task types. From here, we designed templates that strip
+          away domain-specific elements so they can be applied across different sciences. These are published
+          on the STRUDEL website as Figma files, and several have been implemented as React templates.
+        </p>
+      </div>
+
+      <!-- Screenshot -->
+      <figure class="rounded-2xl overflow-hidden border bg-white/70 shadow-sm">
+        <img
+          src="./assets/strudelartifacts.png"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </figure>
+    </section>
+
+
+    <section>
+      <p class="text-gray-700 max-w-prose">
+        <h2 class="font-playfair text-xl md:text-2xl mb-3">STRUDEL Task Flows</h2>
+        Design systems can focus on various levels of detail — from how a button should look like or how a data table should behave. We decided to focus on the higher level workflow that users do in order to accomplish a task, which we call <a href="https://strudel.science/design-system/task-flows/overview/" target="_blank" class="text-gray-800 underline underline-offset-4 hover:text-gray-900 decoration-fuchsia-400 hover:decoration-2">Task Flows</a>. We wanted to focus our efforts on a level that, in our experience, scientific users needed the most help on — how to think about how their users can accomplish a task using a web UI.  
+      </p>
+    </section>
+
+
+    <!-- Screenshots -->
+    <section>
+      <img src="./assets/strudelruncomputation.png" class="rounded-xl shadow-md mb-6">
+      <p class="text-gray-700 italic">
+        Our <a href="https://strudel.science/design-system/task-flows/run-computation/" target="_blank" class="text-gray-800 underline underline-offset-4 hover:text-gray-900 decoration-fuchsia-400 hover:decoration-2">Run Computation task flow</a>, which shows a workflow for how a user can configure, run, and view results of compututational methods. 
+      </p>
+    </section>
+
+
+
+    <section class="grid md:grid-cols-2 gap-8 items-start mt-10">
+      <!-- Left: heading + paragraph -->
+      <div>
+        <h2 class="font-playfair text-xl md:text-2xl mb-3">Empowering our users with AI to form a community of practice</h2>
+        <p class="text-gray-700">
+          Our lofty goal with our design system was to empower scientists to create their own UIs, without needing much frontend skills. However, even with trying to simplify setup with configuration files and command line tools, we realized that we were falling short of our goal, with the skill gap being too large for many of our users. This is when we decided to experiment with AI agents to help our users close that skill gap. In October, we hosted a workshop on using AI with STRUDEL to develop science UIs. With over 30 in-person participants, we were extremely excited to see how much our users could accomplish in a single day, even users who had never written a line of code or used the command line.
+
+          <BR>&nbsp;<BR>
+          The elephant in the room in the era of AI is whether design systems like STRUDEL are even necessarily given that gen AI is capable of creating an AI with very little user feedback. Based on the feedback from the workshop, at least for now, users appreciate the sense of control and transparency that starting with a trusted resource provided, as a form of guardrails. Rather than relying entirely on the AI to generate the end product, users felt much more comfortable starting with a baseline and using the AI agent as a partner to incrementally move towards their goals. 
+                    <BR>&nbsp;<BR>
+          A surprisingly development was the sense of community and comraderie that was generated, as we all graple with how to best utitlize and integrate these new technologies in our work and lives. We saw participants helping each other, providing their advice and experiences, and wanting to continue to be a part of a learning community. Several particpants expressed wanting to continue the experience, by joining future workshops, attending ongoing meetings with like minded individuals (like the US-RSE UX working group), and contributing back to the STRUDEL project.
+        </p>
+      </div>
+
+      <!-- Right: screenshot -->
+      <figure class="rounded-2xl overflow-hidden border bg-white/70 shadow-sm">
+        <img
+          src="./assets/strudelai.jpg"
+          alt="STR UDEL AI workshop session screenshot"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </figure>
+    </section>
+
+
+    <section>
+        <h2 class="font-playfair text-xl md:text-2xl mb-3">Thoughts & Talks</h2>
+
+       <ul class="mt-3 space-y-2">
+    <!-- Talk -->
+    <li class="flex items-start gap-2">
+      <span class="inline-flex items-center text-xs font-inter px-2 py-0.5 rounded-full bg-fuchsia-100 text-fuchsia-800">Talk</span>
+      Learn more about the STRUDEL Design System in my webinar <a target="_blank" class="text-gray-800 underline underline-offset-4 hover:text-gray-900 decoration-fuchsia-400 hover:decoration-2" href="https://www.youtube.com/watch?v=b_O6DWIILFM
+">"How to Build a Science UI: Getting Started with the STRUDEL Design System"</a>
+    </li>
+        <!-- Blog -->
+    <li class="flex items-start gap-2">
+      <span class="inline-flex items-center text-xs font-inter px-2 py-0.5 rounded-full bg-gray-100 text-gray-700">Blog</span>Read more about my experiences using AI in my blog post 
+      <a href="https://www.linkedin.com/pulse/getting-my-science-app-mobile-ready-help-ai-strudel-science-z81ec/?trackingId=OBQiP39MS9WIBptzxYuFPQ%3D%3D"
+         target="_blank" rel="noreferrer"
+         class="font-inter text-gray-800 underline underline-offset-4 decoration-fuchsia-400 hover:text-gray-900 hover:decoration-2 inline-flex items-center gap-1">
+        "Getting my science app mobile ready with the help of AI"
+        
+      </a>
+    </li>
+  </ul>
+</section>
+
+        <!-- Back / Contact -->
+    <section class="flex flex-wrap items-center gap-4">
+      <a href="projects.html" class="text-gray-800 underline underline-offset-4 decoration-fuchsia-400 hover:text-gray-900 hover:decoration-2">
+        ← Back to Projects
+      </a>
+
+    </section>
+  </main>
+
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
