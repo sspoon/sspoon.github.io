@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI for PrOMMiS | Sarah Poon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    .font-inter { font-family: 'Inter', sans-serif; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-fuchsia-50 text-gray-900 font-inter">
+  <!-- Header -->
+  <header class="bg-fuchsia-100/80 backdrop-blur py-4 border-b border-gray-300 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+      <a href="index.html" class="font-playfair text-2xl md:text-3xl text-gray-900 hover:opacity-90">Sarah Poon</a>
+      <nav class="space-x-6">
+        <a href="projects.html" class="text-gray-700 hover:text-gray-900 hover:underline underline-offset-4">Projects</a>
+        <a href="#contact" class="text-gray-700 hover:text-gray-900 hover:underline underline-offset-4">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-16 space-y-12">
+    <section>
+      <h1 class="font-playfair text-3xl md:text-4xl">How AI, conceptual models, and UX can help novice users develop code</h1>
+      <p class="mt-3 text-gray-700 ">
+      </p>
+    </section>
+
+
+<section class="grid md:grid-cols-2 gap-8 items-start mt-10">
+  <!-- Left: Text column -->
+  <div>
+    <h2 class="font-playfair text-xl md:text-2xl mb-3">Background & Motivation - the PrOMMiS project</h2>
+    <p class="text-gray-700">
+      Stories about rare earth materials have been all over the news in recent years. Although these elements are not really that rare, refining them into usable products requires extracting and processing them from raw materials, and these capabilities are much more scarce. Building the infrastructure for such processes demands significant time and investment. Traditionally, engineers have relied on prototypes and physical models built at multiple scales to test and validate new processing systems before full-scale implementation.<br><br>
+    </p>
+    <p class="text-gray-700">
+      Computational simulation and optimization can help. The PrOMMiS project is a multi-institutional collaboration building a software modeling platform to accelerate development and deployment of extraction and purification processes for critical minerals and rare earth elements. The core software is a python based library that can be used to represent these systems as mathematical equations. This allows computational methods such as optimization to help engineers and planning understand the system.<br><br>
+    </p>
+    <p class="text-gray-700">
+      Although these methods are powerful, it comes with a steep learning curve. Many seasoned process engineers may not be well versed in programming and also computational optimization methods. Over numerous interviews, workshops, and meetings, challenges with learning such libraries and understanding and debugging the models have been consistent themes. Creating a drag and drop UI could help in terms of building models, but the models themselves can feel like a bit of a black box that is difficult to fully inspect and understand.
+    </p>
+  </div>
+
+  <!-- Right: Images column -->
+  <div class="flex flex-col gap-8">
+    <figure class="bg-transparent rounded-2xl p-2 text-center">
+      <img
+        src="./assets/prommisdiagram.png"
+        alt="System diagram showing process stages"
+        class="max-w-[80%] max-h-80 object-contain mx-auto"
+        loading="lazy"
+      />
+      <figcaption class="text-sm text-gray-600 italic mt-2">
+        A representation of a processing plant that would take in some raw material, like brackish water, and output some concentration of rare earth materials.
+      </figcaption>
+    </figure>
+
+    <figure class="bg-transparent rounded-2xl p-2 text-center">
+      <img
+        src="./assets/idaeschallenges.jpg"
+        alt="Workshop feedback on model transparency"
+        class="max-w-[80%] max-h-80 object-contain mx-auto"
+        loading="lazy"
+      />
+      <figcaption class="text-sm text-gray-600 italic mt-2">
+        During a workshop, many users expressed difficulties with the opacity of the models and optimization outputs.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+
+    <section class="grid md:grid-cols-2 gap-8 items-start mt-10">
+      <!-- Text -->
+      <div>
+        <h2 class="font-playfair text-xl md:text-2xl mb-3">AI and Conceptual models as powerful partners for non coders</h2>
+        <p class="text-gray-700">
+          Using agenic AI to help write code is increasingly becoming a common practice, especially when working with unfamiliar codes and libraries. Responding to a prompt, AI agents will commonly provide a narrative description of what changes they suggest and why they chose those changes. When integrated with a IDE such as VS Code, they may also provide code diffs so you can visually verify the changes. 
+          <BR><BR>
+          Using agenic AI will potentially be a great leap in terms of helping new users work with the PrOMMiS framework. However, showing the code diffs might not be enough to help users understand and verify the changes the agent is making on their behalf. 
+          <BR><BR>
+          This had me reflecting on <a href="https://www.linkedin.com/pulse/getting-my-science-app-mobile-ready-help-ai-strudel-science-z81ec/"
+   target="_blank" rel="noreferrer"
+   class="font-inter text-gray-800 underline underline-offset-4 decoration-fuchsia-400 hover:text-gray-900 hover:decoration-2 inline">
+  my experiences using agenic AI to update frontend web code
+</a>. Even if I didn't really understand the code changes that were being suggested, I could view the UI updates to know that the changes made were what I intended. Having a visual representation of the interpreted code - or a visual conceptual model that serves as an abstract representation of a system - is an important bridge in helping people use AI to develop code. 
+        </p>
+      </div>
+
+      <!-- Screenshot -->
+      <figure class="bg-transparent rounded-2xl p-2 text-center">
+        <img
+          src="./assets/codediff.png"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+        <figcaption class="text-sm text-gray-600 italic mt-2">
+        Example of a code diff previewing changes by an AI agent. This helps users see what changed in the code but may not be enough for some users to really verify the changes are what they intended.
+      </figcaption>
+      </figure>
+
+    </section>
+    <section class="grid md:grid-cols-2 gap-8 items-start mt-10">
+      <!-- Text -->
+      <div>
+        <h2 class="font-playfair text-xl md:text-2xl mb-3">Early UX ideation on a conceptual model design for PrOMMiS</h2>
+        <p class="text-gray-700">
+          There's still a lot of work to be done, but here's a sneak peak (coming soon) at what a conceptual model for PrOMMiS could look like. When coming up with a visual conceptual model, I focused on the use cases that were common among novice users and areas where they typically struggled the most, based on interviews with new users as with mentors who frequently work with new users. Namely, I knew that new users commonly struggled with changing the variables and constraints of the system without violating the bounds of the system. With this in mind, I had a few design goals. I wanted:<BR><BR>
+<ul class="list-disc marker:text-fuchsia-500 pl-6 space-y-2 text-gray-700 font-inter leading-relaxed">
+  <li>A domain-specific UI that could summarize for users the main concepts and relationships in the system.</li>
+  <li>To show how the visual could be integrated into a developer tool that uses an AI agent.</li>
+  <li>A way to highlight which aspects have been changed by the AI agent for inspection and verification.</li>
+</ul>
+
+        </p>
+      </div>
+
+      <!-- Screenshot -->
+      <figure class="rounded-2xl overflow-hidden border bg-white/70 shadow-sm">
+        <img
+          src="./assets/prommis.png"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </figure>
+    </section>
+
+
+ 
+
+
+
+
+
+
+
+        <!-- Back / Contact -->
+    <section class="flex flex-wrap items-center gap-4">
+      <a href="projects.html" class="text-gray-800 underline underline-offset-4 decoration-fuchsia-400 hover:text-gray-900 hover:decoration-2">
+        ← Back to Projects
+      </a>
+
+    </section>
+  </main>
+
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
