@@ -39,10 +39,10 @@
       Stories about rare earth materials have been all over the news in recent years. Although these elements aren't actually that rare, refining them into usable products requires extracting and processing them from raw materials, and these capabilities are much more scarce. Building the infrastructure for such processes demands significant time and investment. Traditionally, engineers have relied on prototypes and physical models built at multiple scales to test and validate new processing systems before full-scale implementation.<br><br>
     </p>
     <p class="text-gray-700">
-      Computational simulation and optimization can help. The PrOMMiS project is a multi-institutional collaboration building a software modeling platform to accelerate development and deployment of extraction and purification processes for critical minerals and rare earth elements. The core software is a python based library that can be used to represent these systems as mathematical equations. This allows computational methods such as optimization to help engineers and planning understand the system.<br><br>
+      Computational simulation and optimization can play a key role in addressing these challenges. The PrOMMiS project is a multi-institutional collaboration developing a software modeling platform to accelerate the design and deployment of extraction and purification processes for critical minerals and rare earth elements. At its core is a Python-based library that represents these systems as mathematical equations, enabling computational methods such as optimization to help engineers and planners better understand and work with process models.<br><br>
     </p>
     <p class="text-gray-700">
-      Although these methods are powerful, it comes with a steep learning curve. Many seasoned process engineers may not be well versed in programming and also computational optimization methods. Over numerous interviews, workshops, and meetings, challenges with learning such libraries and understanding and debugging the models have been consistent themes. Creating a drag and drop UI could help in terms of building models, but the models themselves can feel like a bit of a black box that is difficult to fully inspect and understand.
+      Although these methods are powerful, they come with a steep learning curve. Many experienced process engineers are not well-versed in programming or computational optimization techniques. Across numerous interviews, workshops, and meetings, we consistently heard about challenges in learning these libraries and in understanding or debugging the resulting models. A drag-and-drop UI could help simplify model construction, but the models themselves can still feel like black boxes — difficult to fully inspect or understand.
     </p>
   </div>
 
@@ -80,15 +80,12 @@
       <div>
         <h2 class="font-playfair text-xl md:text-2xl mb-3">AI and Conceptual models as powerful partners for non coders</h2>
         <p class="text-gray-700">
-          Using agentic AI to help write code is increasingly becoming a common practice, especially when working with unfamiliar codes and libraries. Responding to a prompt, AI agents will commonly provide a narrative description of what changes they suggest and why they chose those changes. When integrated with a IDE such as VS Code, they may also provide code diffs so you can visually verify the changes. 
-          <BR><BR>
-          Using agentic AI will potentially be a great leap in terms of helping new users work with the PrOMMiS framework. However, showing the code diffs might not be enough to help users understand and verify the changes the agent is making on their behalf. 
-          <BR><BR>
-          This had me reflecting on <a href="https://www.linkedin.com/pulse/getting-my-science-app-mobile-ready-help-ai-strudel-science-z81ec/"
-   target="_blank" rel="noreferrer"
-   class="font-inter text-gray-800 underline underline-offset-4 decoration-fuchsia-400 hover:text-gray-900 hover:decoration-2 inline">
-  my experiences using agentic AI to update frontend web code
-</a>. Even if I didn't really understand the code changes that were being suggested, I could view the UI updates to know that the changes made were what I intended. Having a visual representation of the interpreted code - or a visual conceptual model that serves as an abstract representation of a system - is an important bridge in helping people use AI to develop code. 
+          Using agentic AI to help write code is becoming increasingly common, especially when working with unfamiliar codebases and libraries. In response to a prompt, AI agents often provide a narrative explanation of the changes they suggest and why they made them. When integrated into an IDE such as VS Code, they may also generate code diffs so users can visually verify the updates.
+<BR><BR>
+This approach could be a major step forward in helping new users work with the PrOMMiS framework. However, code diffs alone may not provide enough context for users to fully understand or verify the changes the AI agent makes on their behalf.
+<BR><BR>
+
+This led me to reflect on <a href="https://www.linkedin.com/pulse/getting-my-science-app-mobile-ready-help-ai-strudel-science-z81ec/" target="_blank" rel="noreferrer" class="font-inter text-gray-800 underline underline-offset-4 decoration-fuchsia-400 hover:text-gray-900 hover:decoration-2 inline">my experiences using agentic AI to update frontend web code</a>. Even when I didn’t fully understand the code modifications being suggested, I could view the resulting UI changes and confirm that they matched my intent. Having a visual representation of the interpreted code — or a conceptual model that abstracts the system’s behavior — provides an important bridge, helping people use AI more confidently and effectively in code development.
         </p>
       </div>
 
