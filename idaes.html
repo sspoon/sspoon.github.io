@@ -42,7 +42,7 @@
       Computational simulation and optimization can help. The PrOMMiS project is a multi-institutional collaboration developing a software modeling platform to accelerate the design and deployment of extraction and purification processes for critical minerals and rare earth elements. At its core is a Python-based library that represents these systems as mathematical equations, enabling computational methods such as optimization to help engineers and planners better understand and work with process models.<br><br>
     </p>
     <p class="text-gray-700">
-      Although these methods are powerful, they come with a steep learning curve. Many experienced process engineers are not well-versed in programming or computational optimization techniques. Across numerous interviews, workshops, and meetings, we consistently heard about challenges in learning these libraries and in understanding or debugging the resulting models. A drag-and-drop UI could help simplify building models, but the models themselves can still feel like black boxes — difficult to fully inspect or understand.
+      Although these methods are powerful, they come with a steep learning curve. Many experienced process engineers are not well-versed in programming or computational optimization techniques. Across numerous interviews, workshops, and meetings, we consistently heard about challenges in learning these libraries and in understanding or debugging the resulting models. A drag-and-drop UI could help simplify building models, but the models themselves can still feel like black boxes and are difficult to fully inspect or understand.
     </p>
   </div>
 
@@ -85,7 +85,7 @@
 This approach could be a major step forward in helping new users work with the PrOMMiS framework. However, code diffs alone may not provide enough context for users to fully understand or verify the changes the AI agent makes on their behalf.
 <BR><BR>
 
-This led me to reflect on <a href="https://www.linkedin.com/pulse/getting-my-science-app-mobile-ready-help-ai-strudel-science-z81ec/" target="_blank" rel="noreferrer" class="font-inter text-gray-800 underline underline-offset-4 decoration-fuchsia-400 hover:text-gray-900 hover:decoration-2 inline">my experiences using agentic AI to update frontend web code</a>. Even when I didn’t fully understand the code modifications being suggested, I could view the resulting UI changes and confirm that the changes were what I intended. Having a visual representation of the interpreted code — or a conceptual model that abstracts the system’s behavior — provides an important bridge, helping people use AI more confidently in code development.
+This led me to reflect on <a href="https://www.linkedin.com/pulse/getting-my-science-app-mobile-ready-help-ai-strudel-science-z81ec/" target="_blank" rel="noreferrer" class="font-inter text-gray-800 underline underline-offset-4 decoration-fuchsia-400 hover:text-gray-900 hover:decoration-2 inline">my experiences using agentic AI to update frontend web code</a>. Even when I didn’t fully understand the code modifications being suggested, I could view the resulting UI changes and confirm that the changes were what I intended. Having a visual representation of the interpreted code, a conceptual model that abstracts the system’s behavior, provides an important bridge, helping people use AI more confidently in code development.
         </p>
       </div>
 
@@ -105,10 +105,9 @@ Example of a code diff previewing changes made by an AI agent. This helps users 
     <section>
       <!-- Text -->
       <div>
-        <h2 class="font-playfair text-xl md:text-2xl mb-3">Early UX ideation on a conceptual model design for PrOMMiS</h2>
+        <h2 class="font-playfair text-xl md:text-2xl mb-3">VS Code Extension for PrOMMiS</h2>
         <p class="text-gray-700">
-There’s still a lot of work to be done, but below is a sneak peek at what a conceptual model for PrOMMiS could look like.
-<BR><BR>
+As a platform, we decided to use VS Code, and in particular, a VS Code Extension to surface the conceptual model of a PrOMMiS flowsheet.<BR><BR>
 When developing this visual conceptual model, I focused on use cases that were most common among novice users — specifically, the areas where they tended to struggle most. These insights came from interviews with both new users and the mentors who frequently support them. One recurring challenge was that beginners often had difficulty changing variables and constraints without violating the system’s bounds.
 <BR><BR>
 With this in mind, I defined a few key design goals:
@@ -119,9 +118,9 @@ With this in mind, I defined a few key design goals:
       </div>
 
       <!-- Right: screenshot -->
-        <img src="./assets/prommis.png" class="rounded-xl shadow-md mb-6">
+        <img src="./assets/flowsheetinspector.png" class="rounded-xl shadow-md mb-6">
         <p class="text-gray-700 italic">
-        A mockup showing early explorations of the results of an AI-generated code change. The top panel displays the modified code, while the bottom illustrates a conceptual model of that code. Orange highlights indicate the areas affected by the code changes in the conceptual model. In this example, the change introduces issues in the system that are not obvious just by inspecting the code or even the generated output when the code is run. These are now flagged for review. 
+        A screenshot of our current VS Code extension 
       </p>
     </section>
 
