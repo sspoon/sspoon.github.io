@@ -23,6 +23,7 @@
   <!-- Header -->
   <header class="bg-fuchsia-100/80 backdrop-blur py-4 border-b border-gray-300 sticky top-0 z-50">
     <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+
       <a
         href="index.html"
         class="font-playfair text-2xl md:text-3xl text-gray-900 hover:opacity-90"
@@ -37,6 +38,7 @@
         >
           Projects
         </a>
+
         <a
           href="index.html#contact"
           class="text-gray-700 hover:text-gray-900 hover:underline underline-offset-4"
@@ -44,6 +46,7 @@
           Contact
         </a>
       </nav>
+
     </div>
   </header>
 
@@ -53,6 +56,7 @@
     <!-- Intro -->
     <section class="mb-14">
       <div class="max-w-4xl">
+
         <p class="text-sm font-medium uppercase tracking-widest text-gray-500 mb-4">
           Selected work
         </p>
@@ -67,22 +71,26 @@
           these tools more understandable and how AI is changing both the
           products we design and the way we design them.
         </p>
+
       </div>
     </section>
 
 
     <!-- Action photos -->
-    <section aria-label="Sarah working with scientific software teams" class="mb-24">
+    <section
+      aria-label="Sarah working with scientific software teams"
+      class="mb-16"
+    >
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
 
         <figure class="rounded-2xl overflow-hidden">
           <img
             src="assets/strudel-ai-workshop.png"
             alt="STRUDEL AI workshop"
-            class="w-full aspect-[4/3] object-cover"
+            class="w-full aspect-[16/9] object-cover"
             loading="lazy"
             width="800"
-            height="600"
+            height="450"
           />
         </figure>
 
@@ -90,10 +98,10 @@
           <img
             src="assets/tsukuba.png"
             alt="University of Tsukuba collaboration meeting"
-            class="w-full aspect-[4/3] object-cover"
+            class="w-full aspect-[16/9] object-cover"
             loading="lazy"
             width="800"
-            height="600"
+            height="450"
           />
         </figure>
 
@@ -101,10 +109,10 @@
           <img
             src="assets/scidata.png"
             alt="Scientific Data Division"
-            class="w-full aspect-[4/3] object-cover"
+            class="w-full aspect-[16/9] object-cover"
             loading="lazy"
             width="800"
-            height="600"
+            height="450"
           />
         </figure>
 
@@ -112,10 +120,11 @@
     </section>
 
 
-    <!-- LBNL -->
+    <!-- Lawrence Berkeley National Laboratory -->
     <section class="border-t border-fuchsia-200 pt-14 mb-24">
 
       <div class="max-w-3xl mb-12">
+
         <p class="text-sm font-medium uppercase tracking-widest text-gray-500 mb-3">
           Lawrence Berkeley National Laboratory
         </p>
@@ -125,6 +134,7 @@
         </h2>
 
         <div class="space-y-4 text-gray-700 leading-relaxed">
+
           <p>
             I've been designing and developing interfaces for scientists for
             more than 15 years. From my first project, a Java-based desktop
@@ -138,18 +148,29 @@
             The case studies below focus primarily on work I've led as a
             <span class="font-medium">product designer</span>.
           </p>
+
         </div>
       </div>
 
 
       <!-- Primary case studies -->
-      <div class="grid md:grid-cols-3 gap-6">
+      <div class="grid md:grid-cols-3 gap-8">
 
-        <!-- HPDF -->
+        <!-- HPDF Console -->
         <a
           href="console.html"
-          class="group block border-t-2 border-gray-800 pt-6 pb-8"
+          class="group block"
         >
+
+          <div class="aspect-[16/10] overflow-hidden rounded-xl bg-white mb-6 shadow-sm">
+            <img
+              src="./assets/console.png"
+              alt="HPDF Console interface"
+              class="w-full h-full object-cover object-top transition duration-300 group-hover:scale-[1.01]"
+              loading="lazy"
+            />
+          </div>
+
           <p class="text-xs font-medium uppercase tracking-widest text-gray-500 mb-3">
             HPDF Console
           </p>
@@ -166,14 +187,25 @@
           <p class="mt-5 text-sm font-medium text-gray-800">
             View case study →
           </p>
+
         </a>
 
 
         <!-- PrOMMiS -->
         <a
           href="idaes.html"
-          class="group block border-t-2 border-gray-800 pt-6 pb-8"
+          class="group block"
         >
+
+          <div class="aspect-[16/10] overflow-hidden rounded-xl bg-white mb-6 shadow-sm">
+            <img
+              src="./assets/fi.png"
+              alt="PrOMMiS Flowsheet Inspector in VS Code"
+              class="w-full h-full object-cover object-top transition duration-300 group-hover:scale-[1.01]"
+              loading="lazy"
+            />
+          </div>
+
           <p class="text-xs font-medium uppercase tracking-widest text-gray-500 mb-3">
             PrOMMiS · Flowsheet Inspector
           </p>
@@ -190,14 +222,25 @@
           <p class="mt-5 text-sm font-medium text-gray-800">
             View case study →
           </p>
+
         </a>
 
 
         <!-- STRUDEL -->
         <a
           href="strudel.html"
-          class="group block border-t-2 border-gray-800 pt-6 pb-8"
+          class="group block"
         >
+
+          <div class="aspect-[16/10] overflow-hidden rounded-xl bg-white mb-6 shadow-sm">
+            <img
+              src="./assets/strudelruncomputation.png"
+              alt="STRUDEL Run Computation task flow"
+              class="w-full h-full object-cover object-top transition duration-300 group-hover:scale-[1.01]"
+              loading="lazy"
+            />
+          </div>
+
           <p class="text-xs font-medium uppercase tracking-widest text-gray-500 mb-3">
             STRUDEL
           </p>
@@ -214,17 +257,20 @@
           <p class="mt-5 text-sm font-medium text-gray-800">
             View case study →
           </p>
+
         </a>
 
       </div>
 
 
       <!-- Supporting work -->
-      <div class="mt-12 pt-8 border-t border-fuchsia-200">
+      <div class="mt-14 pt-8 border-t border-fuchsia-200">
+
         <a
           href="otherlbnl.html"
           class="group grid md:grid-cols-[1fr_2fr_auto] gap-4 md:gap-8 items-start"
         >
+
           <h3 class="font-playfair text-xl group-hover:underline underline-offset-4 decoration-fuchsia-400">
             Selected Applied Science Projects
           </h3>
@@ -237,7 +283,9 @@
           <span class="text-sm font-medium whitespace-nowrap">
             View projects →
           </span>
+
         </a>
+
       </div>
 
     </section>
@@ -247,6 +295,7 @@
     <section class="border-t border-fuchsia-200 pt-14 mb-24">
 
       <div class="max-w-3xl">
+
         <p class="text-sm font-medium uppercase tracking-widest text-gray-500 mb-3">
           Stitch Fix
         </p>
@@ -267,6 +316,7 @@
           Please contact me if you'd like to see selected work from my time
           designing tools for the merchandising and warehouse teams.
         </p>
+
       </div>
 
     </section>
@@ -281,7 +331,9 @@
 
       <ul class="max-w-4xl space-y-4">
 
+        <!-- Talk -->
         <li class="flex items-start gap-3">
+
           <span class="inline-flex items-center text-xs px-2 py-0.5 rounded-full bg-fuchsia-100 text-fuchsia-800 mt-0.5">
             Talk
           </span>
@@ -293,10 +345,13 @@
           >
             Women in MIDS webinar on designing for expert use
           </a>
+
         </li>
 
 
+        <!-- Blog -->
         <li class="flex items-start gap-3">
+
           <span class="inline-flex items-center text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-700 mt-0.5">
             Blog
           </span>
@@ -309,10 +364,13 @@
           >
             Getting my science app mobile ready with the help of AI
           </a>
+
         </li>
 
 
+        <!-- Talk -->
         <li class="flex items-start gap-3">
+
           <span class="inline-flex items-center text-xs px-2 py-0.5 rounded-full bg-fuchsia-100 text-fuchsia-800 mt-0.5">
             Talk
           </span>
@@ -324,9 +382,11 @@
           >
             Stitch Fix Girl Geek Dinner lightning talk
           </a>
+
         </li>
 
       </ul>
+
     </section>
 
   </main>
