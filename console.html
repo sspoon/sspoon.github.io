@@ -80,11 +80,20 @@ Because the source material was limited, the AI had to make many design decision
   <div>
     <h2 class="font-playfair text-xl md:text-2xl mb-3">Defining screenflows for AI</h2>
     <p class="text-gray-700">
-      Next, I needed to generate the onboarding process for new users. My initial experiment was to try uploading the journey map developed by our ux researcher, along with the design.md file. The first attempt produced a screen with a progress stepper, the first step labeled "See demonstrated value". This was obviously too literal of an interpretation of the journey map. But more than that, as I walked through the steps, I found that there were missing screens that I intuitively knew should be there. 
+      Next, I needed to generate the onboarding experience for new users. My first experiment was to provide the AI with a journey map developed by our UX researcher, along with the design.md file.
     </p>    
     <BR>
     <p class="text-gray-700">
-      I decided that a journey map wasn't at the right level of description for the AI and instead I mapped out the screens that I wanted. In the spirit of using a machine readable format, I encoded the flow in a mermaid diagram. The resulting flow produced by the AI was exactly what I wanted. 
+The first attempt produced a screen with a progress stepper whose first step was labeled “See demonstrated value,” which was an overly literal interpretation of the journey map. More importantly, as I walked through the generated flow, I noticed screens and interactions were missing that I intuitively knew the experience needed.
+    </p>    
+    <BR>
+    <p class="text-gray-700">
+I realized that the journey map was at the wrong level of abstraction for this task. Instead, I mapped out the specific screens and transitions I wanted. To keep the input structured and machine-readable, I encoded the flow as a Mermaid diagram and provided it to the AI along with the design.md file.
+    </p>    
+    <BR>
+    <p class="text-gray-700">
+The resulting prototype closely matched the flow I had envisioned. The experiment helped me understand that while a journey map is useful for communicating the broader user experience, a screen-level flow gives an AI agent the more explicit structure it needs to generate an interface.
+ 
 
  </div>
 
