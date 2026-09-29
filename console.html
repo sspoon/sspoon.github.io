@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HPDF | Sarah Poon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    .font-inter { font-family: 'Inter', sans-serif; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-fuchsia-50 text-gray-900 font-inter">
+  <!-- Header -->
+  <header class="bg-fuchsia-100/80 backdrop-blur py-4 border-b border-gray-300 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+      <a href="index.html" class="font-playfair text-2xl md:text-3xl text-gray-900 hover:opacity-90">Sarah Poon</a>
+      <nav class="space-x-6">
+        <a href="projects.html" class="text-gray-700 hover:text-gray-900 hover:underline underline-offset-4">Projects</a>
+        <a href="#contact" class="text-gray-700 hover:text-gray-900 hover:underline underline-offset-4">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-16 space-y-12">
+    <section>
+      <h1 class="font-playfair text-3xl md:text-4xl">Designing for AI tools, with AI</h1>
+      <p class="mt-3 text-gray-700 ">
+      </p>
+    </section>
+
+
+<section class="grid items-start mt-10">
+  <!-- Left: Text column -->
+  <div>
+        <h2 class="font-playfair text-xl md:text-2xl mb-3">HPDF Console</h2>
+
+    <p class="text-gray-700">
+      The High Performance Data Facility (HPDF) is a DOE user facility whose mission is o enable and accelerate scientific discovery by delivering data services at the scale. HPDF Console is a work in progress platform to allows facility users to access and work with data stored at HPDF.
+    </p>    
+    <p class="text-gray-700">
+      Scientific data takes many forms, from simple CSV files to high volume data cubes. In my early explorations of the Console, I considered a common use case where scientists wants to be able to explore across two simple CSV files that don't share a common data model. I knew that I wanted to explore the interplay of data stored in a lakehouse and AI capabilities. 
+    </p>  <BR>
+      <img src="./assets/console.png" class="rounded-xl shadow-md mb-6">
+        <p class="text-gray-700 italic">
+        Early mockup shows that data files can be opened in tabs in the center panel. When AI generates a new file (such as merging two data files), that new file would be displayed as a new tab in the center panel.   
+      </p>
+  </div>
+
+  
+</section>
+
+
+  <section class="grid items-start mt-10">
+  <!-- Left: Text column -->
+  <div>
+    <h2 class="font-playfair text-xl md:text-2xl mb-3">Creating our design.md file</h2>
+    <p class="text-gray-700">
+      Separate from the main data platform, I was tasked to quickly design the onboarding and allocation request process. At this point, I decided to experiement with using AI to accelerate that process. 
+    </p>    
+    <p class="text-gray-700">
+      `design.md` files encode a product’s UX and visual design decisions in a format that both humans and AI can read, allowing agents to generate new screens that remain consistent with the rest of the product.
+<br><BR>
+A common workflow for creating a design.md file is to provide an AI agent with an existing website and a design.md template, then prompt it to generate the file based on the site’s design. In my case, however, I had only a handful of early mockups rather than a live product. I uploaded these mockups as a starting point and, through a series of prompts, asked the AI to generate both a `design.md` file and an HTML prototype of the allocation request process.
+<br><BR>
+Because the source material was limited, the AI had to make many design decisions on my behalf, and some of its initial choices weren’t ones I would have made. I iteratively reviewed and refined those decisions with the AI, using the evolving prototype to evaluate the design until I was satisfied with both the interface and the resulting design.md file. 
+    </p>  <BR>
+      <img src="./assets/hpdfallocations.png" class="rounded-xl shadow-md mb-6">
+        <p class="text-gray-700 italic">
+        Screenshot of the AI generated html prototype for reviewing allocation request submissions.   
+      </p>
+  </div>
+
+  
+</section>
+
+<section class="grid md:grid-cols-2 gap-8 items-start mt-10">
+  <!-- Left: Text column -->
+  <div>
+    <h2 class="font-playfair text-xl md:text-2xl mb-3">Defining screenflows for AI</h2>
+    <p class="text-gray-700">
+      Next, I needed to generate the onboarding process for new users. My initial experiment was to try uploading the journey map developed by our ux researcher, along with the design.md file. The first attempt produced a screen with a progress stepper, the first step labeled "See demonstrated value". This was obviously too literal of an interpretation of the journey map. But more than that, as I walked through the steps, I found that there were missing screens that I intuitively knew should be there. 
+    </p>    
+    <BR>
+    <p class="text-gray-700">
+      I decided that a journey map wasn't at the right level of description for the AI and instead I mapped out the screens that I wanted. In the spirit of using a machine readable format, I encoded the flow in a mermaid diagram. The resulting flow produced by the AI was exactly what I wanted. 
+
+ </div>
+
+  <!-- Right: Images column -->
+  <div class="flex flex-col gap-8">
+    <figure class="bg-transparent rounded-2xl p-2 text-center">
+      <img
+        src="./assets/screenflow.png"
+        alt="System diagram showing process stages"
+        class="max-w-[80%] max-h-80 object-contain mx-auto"
+        loading="lazy"
+      />
+      <figcaption class="text-sm text-gray-600 italic mt-2">
+        A mermaid diagram, with each node representing a specific screen in my flow. 
+      </figcaption>
+    </figure>
+
+  
+  </div>
+
+  
+</section>
+
+ 
+
+
+
+
+
+        <!-- Back / Contact -->
+    <section class="flex flex-wrap items-center gap-4">
+      <a href="projects.html" class="text-gray-800 underline underline-offset-4 decoration-fuchsia-400 hover:text-gray-900 hover:decoration-2">
+        ← Back to Projects
+      </a>
+
+    </section>
+  </main>
+
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
